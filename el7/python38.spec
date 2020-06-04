@@ -48,7 +48,9 @@ make altinstall DESTDIR=$RPM_BUILD_ROOT
  
 %files
 /usr/local/bin/2to3-3.8
+/usr/local/bin/easy_install-3.8
 /usr/local/bin/idle3.8
+/usr/local/bin/pip3.8
 /usr/local/bin/pydoc3.8
 /usr/local/bin/python3.8
 /usr/local/bin/python3.8-config
