@@ -1,3 +1,3 @@
-python-altinstall for RHEL/CentOS 7
+python-altinstall package builder
 
-Using the latest python version in the extremely conservative RHEL OS family.
+Packaging the latest python version for different operating systems.

@@ -1,4 +1,4 @@
-python-altinstall for RHEL/CentOS 7
+RHEL/CentOS 7 and compatibles
 
 You need to copy the SPEC that you would like to build and the script to a directory with enough free space in your build host (/tmp might not be big enough). Then
 
