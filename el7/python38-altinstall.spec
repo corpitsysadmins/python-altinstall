@@ -5,7 +5,7 @@
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
 
 Name:           python38-altinstall
-Version:        3.8.3
+Version:        3.8.4
 Release:        1%{?dist}
 Summary:        Interpreter of the Python programming language
 
