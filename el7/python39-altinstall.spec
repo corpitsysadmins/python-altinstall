@@ -1,11 +1,9 @@
-# sitelib for noarch packages, sitearch for others (remove the unneeded one)
-%{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")}
 %{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1))")}
 %define debug_package %{nil}
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
 
 Name:           python39-altinstall
-Version:        3.9.0
+Version:        3.9.2
 Release:        1%{?dist}
 Summary:        Interpreter of the Python programming language
 
@@ -72,5 +70,7 @@ find %{buildroot} -type f -name '*.pyc' -delete
 %doc /usr/local/share/man/man1/python3.9.1.gz
 
 %changelog
+* Mon Mar 8 2021 Irving Leonard <mm-irvingleonard@github.com> 3.9.2-1
+- Upgraded to version 3.9.2
 * Mon Oct 12 2020 Irving Leonard <mm-irvingleonard@github.com> 3.9.0-1
 - Initial RPM release
