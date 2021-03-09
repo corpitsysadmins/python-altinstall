@@ -5,6 +5,6 @@ There are pre-built packages in the releases section of this project.
 In order to build the package you need to copy the SPEC that you would like to build and the script to a directory with enough free space in your build host (/tmp might not be big enough). Then
 
 chmod +x build_rpms.sh
-./build_rpms.sh
+./build_rpms.sh 39
 
 the source RPM will end up in rpmbuild/SRPMS and the binary one in rpmbuild/RPMS
